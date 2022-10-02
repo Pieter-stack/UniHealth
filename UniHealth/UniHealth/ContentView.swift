@@ -2,15 +2,20 @@
 //  ContentView.swift
 //  UniHealth
 //
-//  Created by Pieter Venter on 2022/09/21.
+//  Created by Pieter Venter on 2022/10/02.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, world!")
+        }
+        .padding()
     }
 }
 
