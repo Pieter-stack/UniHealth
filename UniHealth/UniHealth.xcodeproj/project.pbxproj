@@ -11,6 +11,14 @@
 		67A4E66128E998D300A1FE89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4E66028E998D300A1FE89 /* ContentView.swift */; };
 		67A4E66328E998D500A1FE89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A4E66228E998D500A1FE89 /* Assets.xcassets */; };
 		67A4E66628E998D500A1FE89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A4E66528E998D500A1FE89 /* Preview Assets.xcassets */; };
+		67A4E67728E9D49300A1FE89 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4E67628E9D49300A1FE89 /* SplashScreenView.swift */; };
+		67A4E67828E9D6E400A1FE89 /* Karla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67A4E67428E9A88C00A1FE89 /* Karla-Regular.ttf */; };
+		67A4E67928E9D6E700A1FE89 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67A4E67228E9A85F00A1FE89 /* Lato-LightItalic.ttf */; };
+		67A4E67A28E9D6EA00A1FE89 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67A4E67328E9A85F00A1FE89 /* Lato-Regular.ttf */; };
+		67A4E67B28E9D6EC00A1FE89 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 67A4E67128E9A84A00A1FE89 /* Lato-BoldItalic.ttf */; };
+		67A4E67D28E9E5B100A1FE89 /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4E67C28E9E5B100A1FE89 /* OnboardingScreenView.swift */; };
+		67A4E67F28E9E5F200A1FE89 /* BoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4E67E28E9E5F200A1FE89 /* BoardingScreen.swift */; };
+		67A4E68128E9E83A00A1FE89 /* OffesetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4E68028E9E83A00A1FE89 /* OffesetPageTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,15 @@
 		67A4E66028E998D300A1FE89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		67A4E66228E998D500A1FE89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67A4E66528E998D500A1FE89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67A4E67128E9A84A00A1FE89 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		67A4E67228E9A85F00A1FE89 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		67A4E67328E9A85F00A1FE89 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		67A4E67428E9A88C00A1FE89 /* Karla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Karla-Regular.ttf"; sourceTree = "<group>"; };
+		67A4E67528E9A8FA00A1FE89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		67A4E67628E9D49300A1FE89 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		67A4E67C28E9E5B100A1FE89 /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
+		67A4E67E28E9E5F200A1FE89 /* BoardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingScreen.swift; sourceTree = "<group>"; };
+		67A4E68028E9E83A00A1FE89 /* OffesetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffesetPageTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,12 @@
 		67A4E65D28E998D300A1FE89 /* UniHealth */ = {
 			isa = PBXGroup;
 			children = (
+				67A4E67528E9A8FA00A1FE89 /* Info.plist */,
+				67A4E67028E9A79F00A1FE89 /* Screens */,
+				67A4E66F28E9A76200A1FE89 /* Services */,
+				67A4E66E28E9A75B00A1FE89 /* Models */,
+				67A4E66D28E9A74C00A1FE89 /* Views */,
+				67A4E66C28E9A74200A1FE89 /* Fonts */,
 				67A4E65E28E998D300A1FE89 /* UniHealthApp.swift */,
 				67A4E66028E998D300A1FE89 /* ContentView.swift */,
 				67A4E66228E998D500A1FE89 /* Assets.xcassets */,
@@ -65,6 +88,49 @@
 				67A4E66528E998D500A1FE89 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67A4E66C28E9A74200A1FE89 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				67A4E67428E9A88C00A1FE89 /* Karla-Regular.ttf */,
+				67A4E67228E9A85F00A1FE89 /* Lato-LightItalic.ttf */,
+				67A4E67328E9A85F00A1FE89 /* Lato-Regular.ttf */,
+				67A4E67128E9A84A00A1FE89 /* Lato-BoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		67A4E66D28E9A74C00A1FE89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67A4E68028E9E83A00A1FE89 /* OffesetPageTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		67A4E66E28E9A75B00A1FE89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67A4E67E28E9E5F200A1FE89 /* BoardingScreen.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		67A4E66F28E9A76200A1FE89 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		67A4E67028E9A79F00A1FE89 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				67A4E67628E9D49300A1FE89 /* SplashScreenView.swift */,
+				67A4E67C28E9E5B100A1FE89 /* OnboardingScreenView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +193,10 @@
 			files = (
 				67A4E66628E998D500A1FE89 /* Preview Assets.xcassets in Resources */,
 				67A4E66328E998D500A1FE89 /* Assets.xcassets in Resources */,
+				67A4E67A28E9D6EA00A1FE89 /* Lato-Regular.ttf in Resources */,
+				67A4E67B28E9D6EC00A1FE89 /* Lato-BoldItalic.ttf in Resources */,
+				67A4E67828E9D6E400A1FE89 /* Karla-Regular.ttf in Resources */,
+				67A4E67928E9D6E700A1FE89 /* Lato-LightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +207,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67A4E68128E9E83A00A1FE89 /* OffesetPageTabView.swift in Sources */,
 				67A4E66128E998D300A1FE89 /* ContentView.swift in Sources */,
 				67A4E65F28E998D300A1FE89 /* UniHealthApp.swift in Sources */,
+				67A4E67F28E9E5F200A1FE89 /* BoardingScreen.swift in Sources */,
+				67A4E67728E9D49300A1FE89 /* SplashScreenView.swift in Sources */,
+				67A4E67D28E9E5B100A1FE89 /* OnboardingScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +344,7 @@
 				DEVELOPMENT_TEAM = 7T5G873XW3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UniHealth/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +374,7 @@
 				DEVELOPMENT_TEAM = 7T5G873XW3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UniHealth/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
