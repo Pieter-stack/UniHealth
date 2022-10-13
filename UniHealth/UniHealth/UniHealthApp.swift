@@ -11,7 +11,8 @@ import SwiftUI
 struct UniHealthApp: App {
     var body: some Scene {
         WindowGroup {
-           SplashScreenView()
+               ContentView()
+            
         }
     }
 }

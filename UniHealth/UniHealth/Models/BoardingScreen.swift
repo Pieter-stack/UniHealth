@@ -16,9 +16,9 @@ struct BoardingScreen: Identifiable {
 
 //onbaording Model Screen
 var boardingScreens: [BoardingScreen] = [
-    BoardingScreen(image: "OnboardingImgOne", title: "Title1", description: "Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1"),
-    BoardingScreen(image: "OnboardingImgTwo", title: "Title2", description: "Desc2Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1"),
-    BoardingScreen(image: "OnboardingImgThree", title: "Title3", description: "Desc3Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1Desc1")
+    BoardingScreen(image: "OnboardingImgOne", title: "Track your health", description: "University is hard and is easy to lose track of your health with all the deadlines!"),
+    BoardingScreen(image: "OnboardingImgTwo", title: "Enjoy without worry", description: "Let us track your health for you and help you stay healthier."),
+    BoardingScreen(image: "OnboardingImgThree", title: "Feel healthy again", description: "With UniHealth we will track your health and give a short summary at your fingertips!")
 ]
 
 

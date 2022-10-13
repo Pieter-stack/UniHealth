@@ -11,10 +11,21 @@ struct SplashScreenView: View {
     @State private var isActive = false
     @State private var size = 0.8
     @State private var opacity = 0.5
+    @AppStorage("Auth") var auth: Int = 0
+    @AppStorage("isOnboarding") var isOnboarding: Bool = true
     var body: some View {
         
         if isActive{
-            OnboardingScreenView()
+            
+            if(isOnboarding == false){
+                if auth == 1{
+                    DashboardScreenView()
+                }else{
+                    AuthenticationScreenView()
+                }
+            }else{
+                OnboardingScreenView()
+            }
         }else{
             GeometryReader{metrics in
                     VStack{

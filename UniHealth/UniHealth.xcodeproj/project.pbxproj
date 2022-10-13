@@ -19,6 +19,9 @@
 		67A4E67D28E9E5B100A1FE89 /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4E67C28E9E5B100A1FE89 /* OnboardingScreenView.swift */; };
 		67A4E67F28E9E5F200A1FE89 /* BoardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4E67E28E9E5F200A1FE89 /* BoardingScreen.swift */; };
 		67A4E68128E9E83A00A1FE89 /* OffesetPageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4E68028E9E83A00A1FE89 /* OffesetPageTabView.swift */; };
+		67A69F4828F7017500D7BEE3 /* AuthenticationScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A69F4728F7017400D7BEE3 /* AuthenticationScreenView.swift */; };
+		67A69F4A28F70DB300D7BEE3 /* DashboardScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A69F4928F70DB300D7BEE3 /* DashboardScreenView.swift */; };
+		67A69F4F28F808D400D7BEE3 /* SettingsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A69F4E28F808D400D7BEE3 /* SettingsScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		67A4E67C28E9E5B100A1FE89 /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
 		67A4E67E28E9E5F200A1FE89 /* BoardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingScreen.swift; sourceTree = "<group>"; };
 		67A4E68028E9E83A00A1FE89 /* OffesetPageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffesetPageTabView.swift; sourceTree = "<group>"; };
+		67A69F4728F7017400D7BEE3 /* AuthenticationScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationScreenView.swift; sourceTree = "<group>"; };
+		67A69F4928F70DB300D7BEE3 /* DashboardScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardScreenView.swift; sourceTree = "<group>"; };
+		67A69F4E28F808D400D7BEE3 /* SettingsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,9 @@
 			children = (
 				67A4E67628E9D49300A1FE89 /* SplashScreenView.swift */,
 				67A4E67C28E9E5B100A1FE89 /* OnboardingScreenView.swift */,
+				67A69F4728F7017400D7BEE3 /* AuthenticationScreenView.swift */,
+				67A69F4928F70DB300D7BEE3 /* DashboardScreenView.swift */,
+				67A69F4E28F808D400D7BEE3 /* SettingsScreenView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -210,9 +219,12 @@
 				67A4E68128E9E83A00A1FE89 /* OffesetPageTabView.swift in Sources */,
 				67A4E66128E998D300A1FE89 /* ContentView.swift in Sources */,
 				67A4E65F28E998D300A1FE89 /* UniHealthApp.swift in Sources */,
+				67A69F4F28F808D400D7BEE3 /* SettingsScreenView.swift in Sources */,
 				67A4E67F28E9E5F200A1FE89 /* BoardingScreen.swift in Sources */,
+				67A69F4828F7017500D7BEE3 /* AuthenticationScreenView.swift in Sources */,
 				67A4E67728E9D49300A1FE89 /* SplashScreenView.swift in Sources */,
 				67A4E67D28E9E5B100A1FE89 /* OnboardingScreenView.swift in Sources */,
+				67A69F4A28F70DB300D7BEE3 /* DashboardScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
