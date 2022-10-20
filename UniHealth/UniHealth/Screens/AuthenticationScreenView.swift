@@ -37,13 +37,15 @@ struct AuthenticationScreenView: View {
                             HStack{
                                 
                                 
-                               
                                     ZStack{
                                         RoundedRectangle(cornerRadius: 15)
-                                            .fill(Color("CustomPurple"))
+                                            .strokeBorder(Color("CustomRed"),lineWidth: 2)
+                                            .background(RoundedRectangle(cornerRadius: 15)
+                                                .foregroundColor(Color.white))
                                             .frame(height: 50)
                                             .padding()
                                         Text("Skip")
+                                            .foregroundColor(Color("CustomRed"))
                                             .padding(.horizontal, 50)
                                             .font(Font.custom("Karla-Regular", size: getScreenBounds().width/25))
                                             .foregroundColor(.black)
@@ -51,13 +53,16 @@ struct AuthenticationScreenView: View {
                                     .onTapGesture{
                                         auth = 1
                                     }
+
+                                
                                
                                     ZStack{
                                         RoundedRectangle(cornerRadius: 15)
-                                            .fill(Color("CustomPurple"))
+                                            .fill(Color("CustomRed"))
                                             .frame(height: 50)
                                             .padding()
                                         Text("Keep Safe")
+                                            .foregroundColor(.white)
                                             .padding(.horizontal, 50)
                                             .font(Font.custom("Karla-Regular", size: getScreenBounds().width/25))
                                             .foregroundColor(.black)
@@ -77,14 +82,15 @@ struct AuthenticationScreenView: View {
                                 
                                 ZStack{
                                     RoundedRectangle(cornerRadius: 15)
-                                        .fill(Color("CustomPurple"))
+                                        .fill(Color("CustomRed"))
                                         .frame(height: 50)
                                         .padding()
                                     HStack{
                                         Image(systemName: AuthenticationScreenView.biometricType() == .face ? "faceid" : "touchid")
-                                            .foregroundColor(.black)
+                                            .foregroundColor(.white)
                                             .padding(.trailing, -90)
                                         Text("Unlock")
+                                            .foregroundColor(.white)
                                             .padding(.horizontal, 50)
                                             .font(Font.custom("Karla-Regular", size: getScreenBounds().width/25))
                                             .foregroundColor(.black)
@@ -115,6 +121,8 @@ struct AuthenticationScreenView: View {
                 return .touch
             case .faceID:
                 return .face
+            @unknown default:
+                return .unknown
             }
         } else {
             return authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) ? .touch : .none
@@ -125,6 +133,7 @@ struct AuthenticationScreenView: View {
         case none
         case touch
         case face
+        case unknown
     }
     
     func authenticateUser(){

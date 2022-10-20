@@ -28,12 +28,15 @@ struct SplashScreenView: View {
             }
         }else{
             GeometryReader{metrics in
+                Color.white
+                    .ignoresSafeArea()
                     VStack{
                         Spacer()
                         HStack{
                             Spacer()
                             VStack{
                                 Text("Uni Health")
+                                    .foregroundColor(.black)
                                     .font(.custom("Lato-BoldItalic", size: metrics.size.width/7))
                                 HStack{
                                     Image("ArrowShort")

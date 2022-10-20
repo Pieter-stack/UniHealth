@@ -15,34 +15,42 @@ struct OnboardingScreenView: View {
     @State private var action: Int? = 0
     var body: some View {
         GeometryReader{metrics in
-            
+            Color.white
+                .ignoresSafeArea()
             
             OffsetPageTabView(offset: $offset){
-                HStack(spacing: 0){
-                    ForEach(boardingScreens){screen in
-                        VStack(spacing:15){                            
-                            Image(screen.image)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .padding(.top, -60)
+                ZStack{
+                    Color.white
+                        .ignoresSafeArea()
+                    
+                    HStack(spacing: 0){
+                        ForEach(boardingScreens){screen in
+                            VStack(spacing:15){
+                                Image(screen.image)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .padding(.top, -60)
+                                
+                                VStack(alignment: .center, spacing: 12){
+                                    Text(screen.title)
+                                        .foregroundColor(.black)
+                                        .font(.custom("Lato-LightItalic", size: metrics.size.width/10))
+                                    Text(screen.description)
+                                        .foregroundColor(.black)
+                                        .font(.custom("Karla-Regular", size: metrics.size.width/25))
+                                        .padding([.leading, .trailing], 50)
+                                }//VStack
+                                .padding(.top, device == "iPod touch (7th generation)" || device == "iPhone SE (3rd generation)" || device == "iPhone 8" || device == "iPhone 8 Plus" || device == "iPhone 13 mini" ? -30 : 0)
+                                Spacer()
+                                
+                                
+                            }
                             
-                            VStack(alignment: .center, spacing: 12){
-                                Text(screen.title)
-                                    .font(.custom("Lato-LightItalic", size: metrics.size.width/10))
-                                Text(screen.description)
-                                    .font(.custom("Karla-Regular", size: metrics.size.width/25))
-                                    .padding([.leading, .trailing], 50)
-                            }//VStack
-                            .padding(.top, device == "iPod touch (7th generation)" || device == "iPhone SE (3rd generation)" || device == "iPhone 8" || device == "iPhone 8 Plus" || device == "iPhone 13 mini" ? -30 : 0)
-                            Spacer()
-                        
-                            
+                            .frame(width:getScreenBounds().width)
+                            .frame(maxHeight: getScreenBounds().height)
                         }
-                        
-                        .frame(width:getScreenBounds().width)
-                        .frame(maxHeight: getScreenBounds().height)
-                    }
-                }//HStack
+                    }//HStack
+                }
             }//OffsetPageTab
 
             //Custom Pager view
@@ -129,16 +137,16 @@ struct OnboardingScreenView: View {
                                     isOnboarding.toggle()
                                 }
                             }
-                           
+                            
                         }
                         
-
-                            Spacer()
-                            Spacer()
+                        
+                        Spacer()
+                        Spacer()
                         Spacer()
                         
                         
-
+                        
                         
                     }else{
                         
@@ -150,14 +158,14 @@ struct OnboardingScreenView: View {
                                 .foregroundColor(Color("CustomRed"))
                                 .padding(.vertical,20)
                                 .frame(maxWidth: 100)
-                                Spacer()
+                            Spacer()
                         }
                     }
                     
                     
-
                     
                     
+                
                     
                     
                     HStack(spacing: 8){
@@ -174,6 +182,7 @@ struct OnboardingScreenView: View {
                   
                 }//HStack
             }//VStack
+            
                 .padding()
                 ,alignment: .bottom
         )
