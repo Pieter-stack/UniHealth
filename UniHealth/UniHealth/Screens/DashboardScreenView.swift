@@ -71,7 +71,7 @@ struct DashboardScreenView: View {
                                             .foregroundColor(.black)
                                             .padding(.horizontal, 40)
                                             .padding(.top, 40)
-                                            .frame(width: getScreenBounds().width/1.7)
+                                            .frame(width: getScreenBounds().width/1.7,height: 100)
                                             .font(Font.custom("Lato-BoldItalic", size: getScreenBounds().width/19))
                                             .multilineTextAlignment(.center)
                                         
@@ -79,6 +79,14 @@ struct DashboardScreenView: View {
                                             .foregroundColor(.black)
                                             .padding(.top, 3)
                                             .frame(width: getScreenBounds().width/1.7)
+                                            .font(Font.custom("Lato-LightItalic", size: getScreenBounds().width/22))
+                                        
+                                        Text(activity.description)
+                                            .foregroundColor(.black)
+                                            .padding(.top, 3)
+                                            .padding(.horizontal)
+                                            .multilineTextAlignment(.center)
+                                            .frame(width: getScreenBounds().width/1.7, height: 150)
                                             .font(Font.custom("Lato-LightItalic", size: getScreenBounds().width/22))
                                         
                                         if(device == "iPod touch (7th generation)" || device == "iPhone SE (3rd generation)" || device == "iPhone 8" || device == "iPhone 8 Plus" || device == "iPhone 13 mini"){
@@ -100,6 +108,7 @@ struct DashboardScreenView: View {
                                                     .padding(.top, 50)
                                             }
                                         })//nav for each
+                                        .padding(.top, -60)
                                         
                                         Spacer()
                                     }

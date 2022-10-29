@@ -40,7 +40,7 @@ final class DetailViewModel: ObservableObject{
             return (Int(value), stat.description)
         }else if stat.is(compatibleWith: .meter()){
             let value = stat.doubleValue(for: .meter())
-            let unit = Measurement(value: value, unit: UnitLength.kilometers)
+            let unit = Measurement(value: value/1000, unit: UnitLength.kilometers)
             return (Int(value), mesurementFormatter.string(from: unit))
         }else if stat.is(compatibleWith: .count()){
             let value = stat.doubleValue(for: .count())

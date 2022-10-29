@@ -20,14 +20,17 @@ struct ChartView: View {
                     let max = values.max() ?? 0
                     
                     VStack{
-                        Text(labels[index])
+                        Text(String(values[index]))
                             .foregroundColor(.black)
-                            .rotationEffect(.degrees(-60))
+                            .rotationEffect(.degrees(-30))
+                            .padding(.top)
                         
                         RoundedRectangle(cornerRadius: 5)
                             .fill(Color(barcolor))
                             .frame(width: 20, height: CGFloat(values[index]) / CGFloat(max) * metrics.size.height * 0.4)
                         Text(xAxisLabels[index])
+                            .foregroundColor(.black)
+                            .padding(.bottom)
                         
                     }//VStack
                     

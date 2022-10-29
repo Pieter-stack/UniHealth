@@ -55,6 +55,7 @@ struct DetailView: View {
                     
                 
                 ChartView(values: viewmodel.stats.map {viewmodel.value(from: $0.stat).value}, labels: viewmodel.stats.map {viewmodel.value(from: $0.stat).desc}, xAxisLabels: viewmodel.stats.map {DetailViewModel.dateFormatter.string(from: $0.date)}, color: "CustomBlue", barcolor: "CustomRed")
+                    .padding(.horizontal)
                 Divider()
                 HStack{
                     
@@ -66,7 +67,7 @@ struct DetailView: View {
                     Spacer()
                 }
                 ScrollView(showsIndicators: true){
-                    ForEach(viewmodel.stats){stat in
+                    ForEach(viewmodel.stats.reversed()){stat in
                         HStack{
                             ZStack{
                                RoundedRectangle(cornerRadius: 5)
@@ -78,10 +79,11 @@ struct DetailView: View {
                                     .frame(width: 30)
                             }
                             .padding(.trailing)
-                         
                             Text(viewmodel.value(from: stat.stat).desc == "" ? String(0) : viewmodel.value(from: stat.stat).desc)
+                                .foregroundColor(.black)
                             Spacer()
                             Text(stat.date, style: .date)
+                                .foregroundColor(.black)
                         }
                         .padding()
                         .padding(.horizontal)
@@ -98,6 +100,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(activity: Activity(id: "Steps", name: "Steps", image: "stepCount", color: "CustomBlue"), repository: HKRepository())
+        DetailView(activity: Activity(id: "Steps", name: "Steps", image: "stepCount", color: "CustomBlue", description: "description"), repository: HKRepository())
     }
 }

@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67465D8129014944007C29EA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67465D8029014944007C29EA /* WidgetKit.framework */; };
+		67465D8329014944007C29EA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67465D8229014944007C29EA /* SwiftUI.framework */; };
+		67465D8629014944007C29EA /* UniHealthWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67465D8529014944007C29EA /* UniHealthWidget.swift */; };
+		67465D8929014946007C29EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67465D8829014946007C29EA /* Assets.xcassets */; };
+		67465D8B29014946007C29EA /* UniHealthWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 67465D8729014944007C29EA /* UniHealthWidget.intentdefinition */; };
+		67465D8C29014946007C29EA /* UniHealthWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 67465D8729014944007C29EA /* UniHealthWidget.intentdefinition */; };
+		67465D8F29014946007C29EA /* UniHealthWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 67465D7E29014944007C29EA /* UniHealthWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		674A55BE2906AC6900A7CBD2 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6310E2900472100112778 /* DetailViewModel.swift */; };
+		674A55BF2906AC6C00A7CBD2 /* HKRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6310629000E6C00112778 /* HKRepository.swift */; };
+		674A55C02906AC6F00A7CBD2 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E631082900129700112778 /* Date+Ext.swift */; };
+		674A55C12906AC7F00A7CBD2 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6310129000C1E00112778 /* Activity.swift */; };
+		674A55C22906AC8200A7CBD2 /* HealthStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6310329000D9B00112778 /* HealthStat.swift */; };
 		67A4E65F28E998D300A1FE89 /* UniHealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4E65E28E998D300A1FE89 /* UniHealthApp.swift */; };
 		67A4E66128E998D300A1FE89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A4E66028E998D300A1FE89 /* ContentView.swift */; };
 		67A4E66328E998D500A1FE89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67A4E66228E998D500A1FE89 /* Assets.xcassets */; };
@@ -31,7 +43,38 @@
 		67E6310F2900472100112778 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6310E2900472100112778 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		67465D8D29014946007C29EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67A4E65328E998D300A1FE89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67465D7D29014944007C29EA;
+			remoteInfo = UniHealthWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		67465D9029014946007C29EA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				67465D8F29014946007C29EA /* UniHealthWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		67465D7E29014944007C29EA /* UniHealthWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UniHealthWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		67465D8029014944007C29EA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		67465D8229014944007C29EA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		67465D8529014944007C29EA /* UniHealthWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniHealthWidget.swift; sourceTree = "<group>"; };
+		67465D8729014944007C29EA /* UniHealthWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = UniHealthWidget.intentdefinition; sourceTree = "<group>"; };
+		67465D8829014946007C29EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67465D8A29014946007C29EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67A4E65B28E998D300A1FE89 /* UniHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67A4E65E28E998D300A1FE89 /* UniHealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniHealthApp.swift; sourceTree = "<group>"; };
 		67A4E66028E998D300A1FE89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +103,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		67465D7B29014944007C29EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67465D8329014944007C29EA /* SwiftUI.framework in Frameworks */,
+				67465D8129014944007C29EA /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67A4E65828E998D300A1FE89 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,10 +122,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67465D7F29014944007C29EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67465D8029014944007C29EA /* WidgetKit.framework */,
+				67465D8229014944007C29EA /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67465D8429014944007C29EA /* UniHealthWidget */ = {
+			isa = PBXGroup;
+			children = (
+				67465D8529014944007C29EA /* UniHealthWidget.swift */,
+				67465D8729014944007C29EA /* UniHealthWidget.intentdefinition */,
+				67465D8829014946007C29EA /* Assets.xcassets */,
+				67465D8A29014946007C29EA /* Info.plist */,
+			);
+			path = UniHealthWidget;
+			sourceTree = "<group>";
+		};
 		67A4E65228E998D300A1FE89 = {
 			isa = PBXGroup;
 			children = (
 				67A4E65D28E998D300A1FE89 /* UniHealth */,
+				67465D8429014944007C29EA /* UniHealthWidget */,
+				67465D7F29014944007C29EA /* Frameworks */,
 				67A4E65C28E998D300A1FE89 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				67A4E65B28E998D300A1FE89 /* UniHealth.app */,
+				67465D7E29014944007C29EA /* UniHealthWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,6 +259,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		67465D7D29014944007C29EA /* UniHealthWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67465D9329014946007C29EA /* Build configuration list for PBXNativeTarget "UniHealthWidgetExtension" */;
+			buildPhases = (
+				67465D7A29014944007C29EA /* Sources */,
+				67465D7B29014944007C29EA /* Frameworks */,
+				67465D7C29014944007C29EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UniHealthWidgetExtension;
+			productName = UniHealthWidgetExtension;
+			productReference = 67465D7E29014944007C29EA /* UniHealthWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		67A4E65A28E998D300A1FE89 /* UniHealth */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67A4E66928E998D500A1FE89 /* Build configuration list for PBXNativeTarget "UniHealth" */;
@@ -191,10 +283,12 @@
 				67A4E65728E998D300A1FE89 /* Sources */,
 				67A4E65828E998D300A1FE89 /* Frameworks */,
 				67A4E65928E998D300A1FE89 /* Resources */,
+				67465D9029014946007C29EA /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				67465D8E29014946007C29EA /* PBXTargetDependency */,
 			);
 			name = UniHealth;
 			productName = UniHealth;
@@ -211,6 +305,9 @@
 				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					67465D7D29014944007C29EA = {
+						CreatedOnToolsVersion = 14.0;
+					};
 					67A4E65A28E998D300A1FE89 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -230,11 +327,20 @@
 			projectRoot = "";
 			targets = (
 				67A4E65A28E998D300A1FE89 /* UniHealth */,
+				67465D7D29014944007C29EA /* UniHealthWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		67465D7C29014944007C29EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67465D8929014946007C29EA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67A4E65928E998D300A1FE89 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +357,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		67465D7A29014944007C29EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67465D8B29014946007C29EA /* UniHealthWidget.intentdefinition in Sources */,
+				67465D8629014944007C29EA /* UniHealthWidget.swift in Sources */,
+				674A55C22906AC8200A7CBD2 /* HealthStat.swift in Sources */,
+				674A55BF2906AC6C00A7CBD2 /* HKRepository.swift in Sources */,
+				674A55BE2906AC6900A7CBD2 /* DetailViewModel.swift in Sources */,
+				674A55C12906AC7F00A7CBD2 /* Activity.swift in Sources */,
+				674A55C02906AC6F00A7CBD2 /* Date+Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67A4E65728E998D300A1FE89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,12 +391,75 @@
 				67A69F4A28F70DB300D7BEE3 /* DashboardScreenView.swift in Sources */,
 				67E6310429000D9B00112778 /* HealthStat.swift in Sources */,
 				67E6310F2900472100112778 /* DetailViewModel.swift in Sources */,
+				67465D8C29014946007C29EA /* UniHealthWidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		67465D8E29014946007C29EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67465D7D29014944007C29EA /* UniHealthWidgetExtension */;
+			targetProxy = 67465D8D29014946007C29EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		67465D9129014946007C29EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7T5G873XW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UniHealthWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = UniHealthWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openwindow.UniHealth.UniHealthWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67465D9229014946007C29EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7T5G873XW3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UniHealthWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = UniHealthWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openwindow.UniHealth.UniHealthWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		67A4E66728E998D500A1FE89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -394,6 +577,7 @@
 		67A4E66A28E998D500A1FE89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UniHealth/UniHealth.entitlements;
@@ -425,6 +609,7 @@
 		67A4E66B28E998D500A1FE89 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = UniHealth/UniHealth.entitlements;
@@ -456,6 +641,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		67465D9329014946007C29EA /* Build configuration list for PBXNativeTarget "UniHealthWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67465D9129014946007C29EA /* Debug */,
+				67465D9229014946007C29EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		67A4E65628E998D300A1FE89 /* Build configuration list for PBXProject "UniHealth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
