@@ -1,10 +1,10 @@
 <!-- PROJECT LOGO -->
 <br />
 
-![GitHub repo size](https://img.shields.io/github/repo-size/Pieter-stack/UniHealth?color=purple)
-![GitHub watchers](https://img.shields.io/github/watchers/Pieter-stack/UniHealth?color=red)
-![GitHub language count](https://img.shields.io/github/languages/count/Pieter-stack/UniHealth?color=purple)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Pieter-stack/UniHealth?color=red)
+![GitHub repo size](https://img.shields.io/github/repo-size/Pieter-stack/UniHealth?color=EA5A66)
+![GitHub watchers](https://img.shields.io/github/watchers/Pieter-stack/UniHealth?color=CCD5FF)
+![GitHub language count](https://img.shields.io/github/languages/count/Pieter-stack/UniHealth?color=DDF4F6)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Pieter-stack/UniHealth?color=EA5A66)
 
 <h6 align="center">Pieter Venter IOS Expanded 304</h6>
 <p align="center">
@@ -17,7 +17,7 @@
   <h3 align="center">Uni Health</h3>
 
   <p align="center">
-This app is for university students to help them stay healthy throughout sterssful terms and also keep track of their helath and summarize the findings for quick and easy access at your fingertips.
+This app is for university students to help them stay healthy throughout sterssful terms and also keep track of their health and summarize the findings for quick and easy access at your fingertips.
 <br>
       <a href="https://github.com/Pieter-stack/UniHealth"><strong>Explore the docs »</strong></a>
       <br />
