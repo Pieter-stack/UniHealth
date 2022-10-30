@@ -22,7 +22,7 @@ This app is for university students to help them stay healthy throughout sterssf
       <a href="https://github.com/Pieter-stack/UniHealth"><strong>Explore the docs »</strong></a>
       <br />
       <br />
-      <a href="add video">View Demo</a>
+      <a href="https://youtu.be/KDl0KgJiNVc">View Demo</a>
        ·
        <a href="https://github.com/Pieter-stack/UniHealth/issues">Report Bug</a>
        ·
@@ -221,7 +221,7 @@ The `Reviews and Testing` consists of `in class`, reviews.
 
 To see the promotional video, click below:
 
-[View Promotional Video](add video)
+[View Promotional Video](https://youtu.be/KDl0KgJiNVc)
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -259,6 +259,8 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 ## Acknowledgements
 
 * [Mockups](https://www.freepik.com)
+* [Youtube Devtechie](https://www.youtube.com/c/DevTechie)
+* [Youtube Kavsoft](https://www.youtube.com/c/kavsoft)
 * [Lecturer](https://github.com/ArmandPret)
 
 
